@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: m1.piu
+OpenIDE-Module-Layer: m1/piu/layer.xml
+OpenIDE-Module-Localizing-Bundle: m1/piu/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

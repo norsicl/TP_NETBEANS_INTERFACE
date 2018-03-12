@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: m1.pui.data
+OpenIDE-Module-Localizing-Bundle: m1/pui/data/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
