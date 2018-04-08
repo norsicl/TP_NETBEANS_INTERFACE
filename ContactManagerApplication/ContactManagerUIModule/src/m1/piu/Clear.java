@@ -27,7 +27,8 @@ public final class Clear implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(DialogDisplayer.getDefault().notify(new NotifyDescriptor.Confirmation("Etes vous sur de vouloir réaliser l'action clear ?")) == "Yes"){
+
+        if(NotifyDescriptor.YES_OPTION == DialogDisplayer.getDefault().notify(new NotifyDescriptor.Confirmation("Etes vous sur de vouloir réaliser l'action clear ?"))){
             DialogDisplayer.getDefault().notify(new NotifyDescriptor.Message("Tous est supprimé.", NotifyDescriptor.WARNING_MESSAGE));
         }
         // TODO implement action body
