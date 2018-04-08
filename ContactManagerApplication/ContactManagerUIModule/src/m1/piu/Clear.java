@@ -7,6 +7,7 @@ package m1.piu;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import org.openide.*;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
 import org.openide.awt.ActionRegistration;
@@ -26,6 +27,9 @@ public final class Clear implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(DialogDisplayer.getDefault().notify(new NotifyDescriptor.Confirmation("Etes vous sur de vouloir réaliser l'action clear ?")) == "Yes"){
+            DialogDisplayer.getDefault().notify(new NotifyDescriptor.Message("Tous est supprimé.", NotifyDescriptor.WARNING_MESSAGE));
+        }
         // TODO implement action body
     }
 }
